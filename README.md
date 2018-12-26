@@ -10,6 +10,6 @@
 # author: Damian Gornik
 # 
 # 
-# Before programme running, you need to have Pytube Module installed already (if you don't have it, you can do it with command below):
+# Before programme running, you need to have Pytube Module installed already (if you don't have it, you can do it easily with the command below):
 # 
 # $ pip install pytube
