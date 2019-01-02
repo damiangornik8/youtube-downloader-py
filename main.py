@@ -40,16 +40,17 @@ class downloader:
         print ("Video Downloading...")
         
         # Get YouTube Video Link from the user
-        yt = YouTube(vidLinkInput)
+        yt = YouTube(self.vidLinkInput)
 
         # Print out Video Title     
         print ("Title: ", yt.title)
 
-        # Get all Video Files -> Select mp4 file format -> Order files by resolution -> Get Video File in the highest possible res ->Download Video File
-        yt.streams.filter(file_extension='mp4').order_by('resolution').first().download()
+        # Get all Video Files Get Video File in the highest possible res -> Download Video File
+        yt.streams.first().download()
 
         # Informs the user that the downloading process has been finished
         print("Video Downloaded!")
+
 
     # Download File as Audio (in mp3 format) Function
     def downloadAudio(self):
@@ -57,13 +58,13 @@ class downloader:
         print ("Audio Downloading...")
         
         # Get YouTube Video Link from the user
-        yt = YouTube(vidLinkInput)
+        yt = YouTube(self.vidLinkInput)
 
         # Print out Video Title     
         print ("Title: ", yt.title)
 
-        # Get all Video Files -> Select mp4 file format -> Order files by resolution -> Get Video File in the highest possible res ->Download Video File
-        yt.streams.filter(file_extension='mp4').order_by('resolution').first().download()
+        # Get all Video Files Get Video File in the highest possible res -> Download Video File
+        yt.streams.first().download()
 
         # Informs the user that the downloading process has been finished
         print("Video Downloaded!")
@@ -76,7 +77,7 @@ class downloader:
         print ("Thumbnail Downloading...")
         
         # Get YouTube Video Link from the user
-        yt = YouTube(vidLinkInput)
+        yt = YouTube(self.vidLinkInput)
 
         # Print out Video Title     
         print ("Title: ", yt.title)
