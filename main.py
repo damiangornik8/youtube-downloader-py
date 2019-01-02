@@ -45,16 +45,8 @@ class downloader:
         # Print out Video Title     
         print ("Title: ", yt.title)
 
-        # Get all Video Files
-        yt.streams
-                # Select mp4 file format
-                .filter(file_extension='mp4')
-                # Order files by resolution 
-                .order_by('resolution')
-                # Get Video File in the highest possible res
-                .first()
-                # Download Video File
-                .download()
+        # Get all Video Files -> Select mp4 file format -> Order files by resolution -> Get Video File in the highest possible res ->Download Video File
+        yt.streams.filter(file_extension='mp4').order_by('resolution').first().download()
 
         # Informs the user that the downloading process has been finished
         print("Video Downloaded!")
@@ -70,16 +62,8 @@ class downloader:
         # Print out Video Title     
         print ("Title: ", yt.title)
 
-        # Get all Video Files
-        yt.streams
-                # Select mp4 file format
-                .filter(file_extension='mp4')
-                # Order files by resolution 
-                .order_by('resolution')
-                # Get Video File in the highest possible res
-                .first()
-                # Download Video File
-                .download()
+        # Get all Video Files -> Select mp4 file format -> Order files by resolution -> Get Video File in the highest possible res ->Download Video File
+        yt.streams.filter(file_extension='mp4').order_by('resolution').first().download()
 
         # Informs the user that the downloading process has been finished
         print("Video Downloaded!")
