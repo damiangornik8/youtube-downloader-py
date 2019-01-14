@@ -96,7 +96,7 @@ class downloader:
 vidExtListChoice = ['1) Video (mp4)', '2) Audio (mp3)', '3) Thumbnail'];
 
 # Get YouTube Video Link from the user
-vidLink = input("Enter video link: ");
+vidLink = raw_input("Enter video link: ");
 
 i = 0; 
 
