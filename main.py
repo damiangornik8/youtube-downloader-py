@@ -23,6 +23,9 @@ import random
 # Import OS Module to convert videos into audio files
 import os
 
+# Import urllib Module to download video thumbnail
+import urllib
+
 # Define Class Downloader
 class downloader:
     
@@ -87,7 +90,7 @@ class downloader:
         # Get a randomly generated name and join it with '.jpg' picture format
         thumbnailNameFull = str(thumbnailName) + '.jpg'
         # Download a Video Thumbnail
-        urllib.request.urlretrieve(yt.thumbnail_url,thumbnailNameFull)
+        urllib.urlretrieve(yt.thumbnail_url,thumbnailNameFull)
 
         # Informs the user that the downloading process has been finished
         print("Thumbnail Downloaded!")
