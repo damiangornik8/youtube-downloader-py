@@ -67,7 +67,7 @@ class downloader:
         yt.streams.first().download()
 
         # Informs the user that the downloading process has been finished
-        print("Video Downloaded!")
+        print("Audio Downloaded!")
 
         # Converting video file (mp4) into audio record (mp3)
         os.rename((yt.title+'.mp4'), (yt.title+'.mp3'));
